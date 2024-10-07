@@ -1,7 +1,7 @@
 #' Calculate custom version of periodic bioclims
 #'
 #' @param target_var # Climate variable to summarize over defined periods
-#' @param target_agg # Method to aggregate target variable. Typically 'mean', except for precipitation, should be 'sum'
+#' @param target_agg # Method to aggregate target variable
 #' @param period_var # Climate variable used to define the periods (e.g. wettest period is defined by precipitation)
 #' @param period_agg # Method to select target period (e.g. 'max' for wettest period or 'min' or driest)
 #' @param period numeric. Length of period to summarize data (e.g., quarters,
@@ -10,6 +10,10 @@
 #' units. For example, if using mean monthly data and quarters, circular=TRUE will also
 #' calculate Nov-Dec-Jan and Dec-Jan-Feb.
 #' @param out_name Optional, variable name in output raster
+#' @details
+#' For 'target_agg' the default value is 'mean'. This is typically correct, except when aggregating precipitation, 
+#' then target_agg should be 'sum.'
+#' 
 #' @export
 #'
 #'

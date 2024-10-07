@@ -2,7 +2,7 @@
 % Please edit documentation in R/clima.R
 \name{clima}
 \alias{clima}
-\title{Get several bioclimatic variables}
+\title{Calculate bioclimatic variables}
 \usage{
 clima(
   bios,
@@ -37,5 +37,5 @@ units. For example, if using mean monthly data and quarters, circular=TRUE will 
 calculate Nov-Dec-Jan and Dec-Jan-Feb.}
 }
 \description{
-Get several bioclimatic variables
+Calculate bioclimatic variables
 }
