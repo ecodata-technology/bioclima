@@ -26,7 +26,7 @@ custom_periodic <- function(target_var, target_agg='mean',
   
   # Check for same extent, number of rows and columns, projection,
   # resolution, and origin
-  sameGeom <- class(purrr::reduce(list(tmin, tmax, tavg, prcp) |>
+  sameGeom <- class(purrr::reduce(list(target_var, period_var) |>
                                     purrr::discard(is.null),
                                   bioclima::testGeom))
   if (sameGeom == "SpatRaster") {
