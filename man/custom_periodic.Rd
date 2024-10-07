@@ -17,13 +17,13 @@ custom_periodic(
 )
 }
 \arguments{
-\item{target_var}{# Climate variable to summarize over defined periods}
+\item{target_var}{Climate variable to summarize over defined periods}
 
-\item{target_agg}{# Method to aggregate target variable}
+\item{target_agg}{Method to aggregate target variable}
 
-\item{period_var}{# Climate variable used to define the periods (e.g. wettest period is defined by precipitation)}
+\item{period_var}{Climate variable used to define the periods (e.g. wettest period is defined by precipitation)}
 
-\item{period_agg}{# Method to select target period (e.g. 'max' for wettest period or 'min' or driest)}
+\item{period_agg}{Method to select target period (e.g. 'max' for wettest period or 'min' or driest)}
 
 \item{period}{numeric. Length of period to summarize data (e.g., quarters,
 semesters). If using monthly data, a quarter (3-months) will be used.}

@@ -1,9 +1,9 @@
 #' Calculate custom version of periodic bioclims
 #'
-#' @param target_var # Climate variable to summarize over defined periods
-#' @param target_agg # Method to aggregate target variable
-#' @param period_var # Climate variable used to define the periods (e.g. wettest period is defined by precipitation)
-#' @param period_agg # Method to select target period (e.g. 'max' for wettest period or 'min' or driest)
+#' @param target_var Climate variable to summarize over defined periods
+#' @param target_agg Method to aggregate target variable
+#' @param period_var Climate variable used to define the periods (e.g. wettest period is defined by precipitation)
+#' @param period_agg Method to select target period (e.g. 'max' for wettest period or 'min' or driest)
 #' @param period numeric. Length of period to summarize data (e.g., quarters,
 #' semesters). If using monthly data, a quarter (3-months) will be used.
 #' @param circular TRUE/FALSE. Calculate periods that include first and last
