@@ -3,7 +3,7 @@
 
 # Average Temperature
 #' @export
-misqua <- function(tmin, tmax) {
+tmean <- function(tmin, tmax) {
   tavg <- (tmin + tmax) / 2
   names(tavg) <- paste0("tavg_", 1:terra::nlyr(tavg))
   return(tavg)
@@ -18,13 +18,13 @@ cv_cli <- function(prcp) {
   return(cv)
 }
 
-#' Windows
+#' Calculate sum of climate raster per period
 #'
 #' @param x spatRaster
 #' @param period Length of period. Default is three. If you are using months. It will be a quarter.
 #' @param circular logical Include first month/weeks?
 #' @export
-ventana <- function(x, period, circular)  {
+sum_period <- function(x, period, circular)  {
   lng <- terra::nlyr(x)
   if (circular == TRUE) {
     ind <- c(1:lng,  1:(period - 1))
