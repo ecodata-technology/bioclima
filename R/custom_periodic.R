@@ -10,6 +10,7 @@
 #' units. For example, if using mean monthly data and quarters, circular=TRUE will also
 #' calculate Nov-Dec-Jan and Dec-Jan-Feb.
 #' @param out_name Optional, variable name in output raster
+#' @param verbose Optional, run with additional log messages
 #' @details
 #' For 'target_agg' the default value is 'mean'. This is typically correct, except when aggregating precipitation, 
 #' then target_agg should be 'sum.'
@@ -22,7 +23,7 @@ custom_periodic <- function(target_var, target_agg='mean',
                             period_var, period_agg, 
                             period = 3, circular = FALSE,
                             checkNA = TRUE, stopNA = TRUE,
-                            out_name=NA, verbose=F) {
+                            out_name=NA, verbose=FALSE) {
   
   # Check for same extent, number of rows and columns, projection,
   # resolution, and origin
